@@ -1,2 +1,0 @@
-# Stepper
-Created with CodeSandbox
