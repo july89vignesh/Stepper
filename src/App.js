@@ -61,7 +61,7 @@ export default class App extends Component {
             direction="horizontal"
             currentStepNumber={currentStep - 1}
             steps={stepsArray}
-            stepColor="purple"
+            stepColor="#192d3e"
             skip={skip}
           />
         </div>

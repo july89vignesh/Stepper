@@ -68,9 +68,18 @@ export default class Stepper extends Component {
             completed: false
           };
           stepCounter++;
+        } else if (
+          newSteps[stepCounter].completed == false &&
+          newSteps[stepCounter].highlighted == false
+        ) {
+          newSteps[stepCounter] = {
+            ...newSteps[stepCounter],
+            highlighted: false,
+            selected: false,
+            completed: false
+          };
+          stepCounter++;
         } else {
-          console.log(stepCounter);
-
           newSteps[stepCounter] = {
             ...newSteps[stepCounter],
             highlighted: false,
